@@ -1,3 +1,3 @@
-java *.java
+javac *.java
 java MyClient 
 pause

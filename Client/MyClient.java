@@ -13,12 +13,7 @@ import java.rmi.Naming;
  */
 public class MyClient {
     public static void main(String[] args) {
-        try {
-            ITinhToan tt = (ITinhToan)Naming.lookup("rmi://localhost/TinhToan");
-            System.out.println(tt.Tong(10, 4));
-            System.out.println(tt.Nhan(10, 4));
-        } catch (Exception e) {
-        }
-        
+        frmHienThi frm = new frmHienThi();
+        frm.setVisible(true);        
     }  
 }

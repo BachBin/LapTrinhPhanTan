@@ -11,17 +11,30 @@
 public class TinhToan implements ITinhToan{
 
     @Override
-    public int Tong(int a, int b) throws Exception {
-        int s = a + b;
-        System.out.println("Tong: "+s);
+    public int Cong(int a, int b) throws Exception {
+        int s = a + b;    
+        System.out.println("Cong: "+s);
+        return s;
+    }
+
+    @Override
+    public int Tru(int a, int b) throws Exception {
+        int s = a - b; 
+        System.out.println("Tru: "+s);
         return s;
     }
 
     @Override
     public int Nhan(int a, int b) throws Exception {
-        int s = a * b;
+        int s = a * b;   
         System.out.println("Nhan: "+s);
-        return s;
+        return s; 
     }
-    
+
+    @Override
+    public int Chia(int a, int b) throws Exception {
+        int s = a / b;   
+        System.out.println("Chia: "+s);
+        return s;
+    }   
 }

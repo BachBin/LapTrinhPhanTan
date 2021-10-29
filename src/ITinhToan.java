@@ -12,6 +12,8 @@ import java.rmi.Remote;
  * @author bachv
  */
 public interface ITinhToan extends Remote{
-    public int Tong(int a, int b) throws Exception;
+    public int Cong(int a, int b) throws Exception;
+    public int Tru(int a, int b) throws Exception;
     public int Nhan(int a, int b) throws Exception;
+    public int Chia(int a, int b) throws Exception;
 }

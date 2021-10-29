@@ -15,7 +15,6 @@ public class GuiNhan {
     }
     public String Nhan() throws Exception{
         Socket socket = sserver.accept();
-//        Tạo bộ đệm để lưu dữ liệu nhận về
         InputStreamReader in = new InputStreamReader(socket.getInputStream(),StandardCharsets.UTF_8);
         BufferedReader br = new BufferedReader(in);
         return br.readLine();

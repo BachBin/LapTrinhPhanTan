@@ -6,6 +6,8 @@
             <name>LTPhanTan</name>
             <source-roots>
                 <root id="src.dir"/>
+                <root id="src.RMIClient.dir"/>
+                <root id="src.RMIServer.dir"/>
             </source-roots>
             <test-roots>
                 <root id="test.src.dir"/>

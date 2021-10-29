@@ -1,3 +1,7 @@
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,8 +12,9 @@
  *
  * @author bachv
  */
-public class TinhToan implements ITinhToan{
-
+public class TinhToan extends UnicastRemoteObject implements ITinhToan{
+    public TinhToan() throws RemoteException {  
+    }
     @Override
     public int Cong(int a, int b) throws Exception {
         int s = a + b;    
